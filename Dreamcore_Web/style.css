@@ -22,6 +22,7 @@ nav {
 nav a {
     margin: 0 1rem;
     text-decoration: none;
+    text-shadow: black 2px 2px 2px;
     color: #ffffff;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -46,6 +47,20 @@ main section {
     box-shadow: 2 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#start {
+    padding-bottom: 400px;
+}
+
+main #welcome {
+    text-align: center;
+    text-shadow: #000000 4px 3px 3px;
+}
+
+main #welcome h1:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.03);
+}
+
 footer {
     background-color: #385670;
     text-align: center;
@@ -57,20 +72,29 @@ footer {
 }
 
 #welcome {
-  background-color: #385670;
-}
-.image-container {
-  display: flex;
-  align-items: center;
-  width: 500px; /* Adjust the width and height as needed */
-  height: auto;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease; /* Adjust the duration as desired */
+    background-color: #385670;
 }
 
-.image-container:hover {
-  transform: scale(1.05); /* Adjust the scale factor as desired */
+.image-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.image-container img {
+    width: 333px;
+    height: auto;
+    margin-right: 10px;
+    box-shadow: #000000 2px 5px 5px;
+    border-radius: 10px;
+    /* Adjust the width and height as needed */
+    transition: transform 0.3s ease;
+    /* Adjust the duration as desired */
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    /* Adjust the scale factor as desired */
 }
 
 
@@ -80,4 +104,9 @@ h1 {
 
 p {
     color: #ffffff;
+}
+
+main .description h3, p {
+    color: black;
+    text-shadow: black 1px 1px 1px;
 }
