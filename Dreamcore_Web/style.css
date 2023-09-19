@@ -1,11 +1,14 @@
+/* #b348ff #916ff2 #6f97e5 #4ec0db #2ce7cc */
+
 body {
     font-family: 'Arial, sans-serif';
     margin: 0;
-    background-color: #233446;
+    background-color: #2ce7cc;
+    background-image: url(bg.png);
 }
 
 header {
-    background-color: #385670;
+    background-color: #4ec0db;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -34,13 +37,17 @@ nav a:hover {
     background-color: #000000;
 }
 
+#welcome {
+    background-color: #4ec0db;
+}
+
 main {
     padding: 2rem;
     margin-top: 4rem;
 }
 
 main section {
-    background-color: #385670;
+    background-color: #4ec0db;
     margin: 10px;
     padding: 2rem;
     border-radius: 8px;
@@ -52,6 +59,7 @@ main section {
 }
 
 main #welcome {
+    color: #ffffff;
     text-align: center;
     text-shadow: #000000 4px 3px 3px;
 }
@@ -62,7 +70,7 @@ main #welcome h1:hover {
 }
 
 footer {
-    background-color: #385670;
+    background-color: #4ec0db;
     text-align: center;
     padding: 1rem;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
@@ -71,20 +79,19 @@ footer {
     width: 100%;
 }
 
-#welcome {
-    background-color: #385670;
-}
+
 
 .image-container {
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: center;
 }
 
 .image-container img {
     width: 333px;
     height: auto;
-    margin-right: 10px;
+    margin: 5px;
     box-shadow: #000000 2px 5px 5px;
     border-radius: 10px;
     /* Adjust the width and height as needed */
@@ -107,6 +114,6 @@ p {
 }
 
 main .description h3, p {
-    color: black;
-    text-shadow: black 1px 1px 1px;
+    color: #b348ff;
+    text-shadow: #6f97e5 1px 1px 1px;
 }
