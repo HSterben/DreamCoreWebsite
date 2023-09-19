@@ -34,11 +34,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #000000;
+    background-color: #916ff2;
 }
 
 #welcome {
     background-color: #4ec0db;
+    color: white;
 }
 
 main {
@@ -58,7 +59,7 @@ main section {
     padding-bottom: 400px;
 }
 
-main #welcome {
+main #welcome h1, h4{
     color: #ffffff;
     text-align: center;
     text-shadow: #000000 4px 3px 3px;
@@ -67,6 +68,9 @@ main #welcome {
 main #welcome h1:hover {
     transition: transform 0.5s ease;
     transform: scale(1.03);
+}
+main #welcome h1:not(:hover) {
+    transform: scale(1);
 }
 
 footer {
@@ -79,8 +83,6 @@ footer {
     width: 100%;
 }
 
-
-
 .image-container {
     display: flex;
     align-items: center;
@@ -92,7 +94,7 @@ footer {
     width: 333px;
     height: auto;
     margin: 5px;
-    box-shadow: #000000 2px 5px 5px;
+    box-shadow: #916ff2 3px 5px 5px;
     border-radius: 10px;
     /* Adjust the width and height as needed */
     transition: transform 0.3s ease;
@@ -104,16 +106,22 @@ footer {
     /* Adjust the scale factor as desired */
 }
 
-
-h1 {
-    color: #ffffff;
+.description {
+    box-shadow: black 1px 4px 4px;
+    margin-top: 30px;
+    background-color: #6f97e5;
+    border-radius: 10px;
+    padding: 10px;
+    height: 150px;
 }
-
-p {
-    color: #ffffff;
-}
-
-main .description h3, p {
+.description h3, p {
+    margin-left: 10px;
     color: #b348ff;
-    text-shadow: #6f97e5 1px 1px 1px;
+    text-shadow: black 0.5px 0.5px 0.5px;
+}
+
+.description p {
+    display: inline-block;
+    width: 900px;
+    height: 300px;
 }
