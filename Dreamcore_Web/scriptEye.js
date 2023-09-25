@@ -55,6 +55,6 @@ function addRandomImage(images) {
 const existingImages = [];
 
 // Add multiple random images (adjust the number as needed)
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 45; i++) {
     addRandomImage(existingImages);
 }

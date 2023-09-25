@@ -178,10 +178,26 @@ p {
 
 #random-images-container {
     position: relative;
-    width: 100%; /* Set the width and height of the container */
-    height: 400px;
+    width: 1800px; /* Set the width and height of the container */
+    height: 3000px;
     overflow: hidden; /* Hide overflow to prevent images from going outside the container */
 }
+
+#random-images-container img {
+    opacity: 0;
+}
+
+#random-images-container img:hover {
+    opacity: 0.4;
+}
+
+/* #field img {
+    opacity: 0;
+}
+
+#field img:hover {
+    opacity: 0.6;
+} */
 
 /*                  PAGE 2 (GALLERY)                 */
 
